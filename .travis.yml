@@ -1,3 +1,11 @@
 node_js:
-        - "node"
+- "node"
+
+script:
+- echo "Verification des styles"
+- npm i jshint --save-dev
+- node_modules/.bin/jshint src
+- echo "toto"
+- npm install
+- npm test
 
