@@ -3,7 +3,9 @@ node_js:
 
 script:
 	- echo "Verification des styles"
+	- npm i jshint --save-dev
 	- node_modules/.bin/jshint src
 	- echo "toto"
-	- npm update
+	- npm install
+	- npm test
 
